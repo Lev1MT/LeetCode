@@ -15,7 +15,7 @@ public class TwoSumOfLinkedList {
         ListNode node5 = new ListNode(9);
         ListNode node6 = new ListNode(9);
         ListNode node7 = new ListNode(9);
-        ListNode node8 = new ListNode(9);
+        ListNode node8 = new ListNode(2);
         ListNode node9 = new ListNode(9);
         ListNode node10 = new ListNode(9);
         ListNode node11 = new ListNode(9);
@@ -25,7 +25,7 @@ public class TwoSumOfLinkedList {
         ListNode node15 = new ListNode(9);
         ListNode node16 = new ListNode(9);
         ListNode node17 = new ListNode(9);
-        ListNode node18 = new ListNode(9);
+        ListNode node18 = new ListNode(3);
         ListNode node19 = new ListNode(9);
         ListNode node20 = new ListNode(9);
         node1.next = node2;
@@ -73,7 +73,7 @@ public class TwoSumOfLinkedList {
         }
 
         if (carry > 0){
-            cur.next = new ListNode(1);
+            cur.next = new ListNode(carry);
         }
 
         return pre.next;
