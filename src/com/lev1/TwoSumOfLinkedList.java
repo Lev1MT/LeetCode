@@ -1,10 +1,11 @@
 package com.lev1;
 
 import java.math.BigDecimal;
-import java.math.BigInteger;
-import java.util.List;
 import java.util.Stack;
 
+/**
+ * 给出两个 非空 的链表用来表示两个非负的整数。其中，它们各自的位数是按照 逆序 的方式存储的，并且它们的每个节点只能存储 一位 数字。
+ */
 public class TwoSumOfLinkedList {
 
     public static void main(String[] args) {
@@ -60,19 +61,19 @@ public class TwoSumOfLinkedList {
         ListNode pre = new ListNode(0);
         ListNode cur = pre;
         int carry = 0;
-        while (l1 != null || l2 != null){
-            int x = l1==null? 0:l1.val;
-            int y = l2==null? 0:l2.val;
-            int sum = x+y+carry;
-            carry = sum/10;
-            sum = sum%10;
+        while (l1 != null || l2 != null) {
+            int x = l1 == null ? 0 : l1.val;
+            int y = l2 == null ? 0 : l2.val;
+            int sum = x + y + carry;
+            carry = sum / 10;
+            sum = sum % 10;
             cur.next = new ListNode(sum);
             cur = cur.next;
-            if (l1 != null)l1= l1.next;
-            if (l2!= null)l2 = l2.next;
+            if (l1 != null) l1 = l1.next;
+            if (l2 != null) l2 = l2.next;
         }
 
-        if (carry > 0){
+        if (carry > 0) {
             cur.next = new ListNode(carry);
         }
 
@@ -90,7 +91,7 @@ public class TwoSumOfLinkedList {
             l1 = l1.next;
         }
         StringBuffer val1 = new StringBuffer("");
-        while (stack.size()>0){
+        while (stack.size() > 0) {
             val1.append(stack.pop());
         }
         while (l2 != null) {
@@ -98,7 +99,7 @@ public class TwoSumOfLinkedList {
             l2 = l2.next;
         }
         StringBuffer val2 = new StringBuffer("");
-        while (stack.size()>0){
+        while (stack.size() > 0) {
             val2.append(stack.pop());
         }
 
