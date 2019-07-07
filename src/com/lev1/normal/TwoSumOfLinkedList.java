@@ -1,4 +1,4 @@
-package com.lev1;
+package com.lev1.normal;
 
 import java.math.BigDecimal;
 import java.util.Stack;

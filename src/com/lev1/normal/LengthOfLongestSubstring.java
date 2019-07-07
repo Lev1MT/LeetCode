@@ -1,4 +1,4 @@
-package com.lev1;
+package com.lev1.normal;
 
 import java.util.HashMap;
 import java.util.Map;

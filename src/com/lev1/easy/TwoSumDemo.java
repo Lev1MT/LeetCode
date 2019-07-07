@@ -1,4 +1,4 @@
-package com.lev1;
+package com.lev1.easy;
 
 import java.util.Arrays;
 import java.util.HashMap;
