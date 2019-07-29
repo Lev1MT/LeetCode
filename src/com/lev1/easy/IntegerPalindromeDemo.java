@@ -6,7 +6,7 @@ package com.lev1.easy;
  * 回文数是指正序（从左向右）和倒序（从右向左）读都是一样的整数。
  * 不将整数转为字符串来解决这个问题。
  */
-public class IntegerPalindromeJudgment {
+public class IntegerPalindromeDemo {
 
     public static void main(String[] args) {
         System.out.println(isPalindrome(12121));
