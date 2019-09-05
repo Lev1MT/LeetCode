@@ -1,9 +1,9 @@
 package com.lev1.easy;
 
 /**
- * ±àĞ´Ò»¸öº¯ÊıÀ´²éÕÒ×Ö·û´®Êı×éÖĞµÄ×î³¤¹«¹²Ç°×º¡£
- * Èç¹û²»´æÔÚ¹«¹²Ç°×º£¬·µ»Ø¿Õ×Ö·û´® ""¡£
- * ËùÓĞÊäÈëÖ»°üº¬Ğ¡Ğ´×ÖÄ¸ a-z ¡£
+ * ç¼–å†™ä¸€ä¸ªå‡½æ•°æ¥æŸ¥æ‰¾å­—ç¬¦ä¸²æ•°ç»„ä¸­çš„æœ€é•¿å…¬å…±å‰ç¼€ã€‚
+ * å¦‚æœä¸å­˜åœ¨å…¬å…±å‰ç¼€ï¼Œè¿”å›ç©ºå­—ç¬¦ä¸² ""ã€‚
+ * æ‰€æœ‰è¾“å…¥åªåŒ…å«å°å†™å­—æ¯ a-z ã€‚
  */
 public class LongestCommonPrefix {
 
@@ -15,12 +15,12 @@ public class LongestCommonPrefix {
     }
 
     /**
-     * µÚÒ»ÖÖ·½·¨£ºË®Æ½É¨Ãè
-     * Ê¹ÓÃStringÖĞµÄindexOf()·½·¨À´ÅĞ¶ÏprefixÊÇ·ñÊÇ×Ó´®
-     * indexOf()·½·¨£º²éÕÒ×Ó´®ËùÔÚÎ»ÖÃ£¬·µ»ØË÷Òıµ½µÄ×Ó´®Ë÷ÒıÍ·
+     * ç¬¬ä¸€ç§æ–¹æ³•ï¼šæ°´å¹³æ‰«æ
+     * ä½¿ç”¨Stringä¸­çš„indexOf()æ–¹æ³•æ¥åˆ¤æ–­prefixæ˜¯å¦æ˜¯å­ä¸²
+     * indexOf()æ–¹æ³•ï¼šæŸ¥æ‰¾å­ä¸²æ‰€åœ¨ä½ç½®ï¼Œè¿”å›ç´¢å¼•åˆ°çš„å­ä¸²ç´¢å¼•å¤´
      *
-     * @param strs ×Ö·û´®Êı×é
-     * @return ·µ»Ø×î³¤¹«¹²Ç°×º
+     * @param strs å­—ç¬¦ä¸²æ•°ç»„
+     * @return è¿”å›æœ€é•¿å…¬å…±å‰ç¼€
      */
     public static String longestCommonPrefix(String[] strs) {
         if (strs == null || strs.length == 0) {
@@ -37,7 +37,7 @@ public class LongestCommonPrefix {
     }
 
     /**
-     * µÚ¶şÖÖ·½·¨£ºË®Æ½É¨Ãè£¬²»½èÖúStringµÄindexOf·½·¨
+     * ç¬¬äºŒç§æ–¹æ³•ï¼šæ°´å¹³æ‰«æï¼Œä¸å€ŸåŠ©Stringçš„indexOfæ–¹æ³•
      *
      * @param strs
      * @return
@@ -56,10 +56,10 @@ public class LongestCommonPrefix {
     }
 
     /**
-     * µÚÈıÖÖ·½·¨£º·ÖÖÎ(µİ¹é)
+     * ç¬¬ä¸‰ç§æ–¹æ³•ï¼šåˆ†æ²»(é€’å½’)
      *
-     * @param strs ×Ö·û´®Êı×é
-     * @return ×î³¤¹«¹²Ç°×º
+     * @param strs å­—ç¬¦ä¸²æ•°ç»„
+     * @return æœ€é•¿å…¬å…±å‰ç¼€
      */
     public static String longestCommonPrefix3(String[] strs) {
         if (strs == null || strs.length == 0) return "";
