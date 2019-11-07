@@ -37,7 +37,7 @@ public class RotateRight {
         }
         temp.next = head;
 
-        // 特别注意这一步，n+1为链表长度，k%(n+1)是求出来的模，右移相当于尾部指针向前移动k次，等同于头部指针向后移动 n+1-(k%(n+1))次
+        // 特别注意这一步，n+1为链表长度，k%(n+1)是求出来的模，右移相当于尾部指针向后移动k次，等同于头部指针向前移动 n+1-(k%(n+1))次
         int step = n + 1 - (k % (n + 1));
         while (step > 0) {
             temp = temp.next;
