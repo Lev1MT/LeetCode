@@ -1,4 +1,4 @@
-package com.lev1.medium;
+package com.lev1.string;
 
 import java.util.HashMap;
 import java.util.Map;

@@ -1,4 +1,4 @@
-package com.lev1.easy;
+package com.lev1.stack;
 
 import java.util.HashMap;
 import java.util.Stack;
