@@ -1,6 +1,3 @@
-/**
- * Alipay.com Inc. Copyright (c) 2004-2019 All Rights Reserved.
- */
 package com.lev1.medium;
 
 /**
@@ -12,7 +9,7 @@ package com.lev1.medium;
  * 当 k = 2 时，应当返回: 2->1->4->3->5
  * 当 k = 3 时，应当返回: 3->2->1->4->5
  */
-public class ReverseKGroupDemo {
+public class ReverseKGroup {
 
     public static void main(String[] args) {
         ListNode node1 = new ListNode(1);
