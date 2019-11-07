@@ -4,10 +4,10 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * ÂÞÂíÊý×Ö×ªÕûÊý:
- * ÂÞÂíÊý×Ö°üº¬ÒÔÏÂÆßÖÖ×Ö·û:I£¬V£¬X£¬L£¬C£¬DºÍM¡£
+ * ç½—é©¬æ•°å­—è½¬æ•´æ•°:
+ * ç½—é©¬æ•°å­—åŒ…å«ä»¥ä¸‹ä¸ƒç§å­—ç¬¦:Iï¼ŒVï¼ŒXï¼ŒLï¼ŒCï¼ŒDå’ŒMã€‚
  * <p>
- * ×Ö·û          ÊýÖµ
+ * å­—ç¬¦          æ•°å€¼
  * I             1
  * V             5
  * X             10
@@ -15,14 +15,14 @@ import java.util.Map;
  * C             100
  * D             500
  * M             1000
- * ÀýÈç£¬ ÂÞÂíÊý×Ö 2 Ð´×ö II £¬¼´ÎªÁ½¸ö²¢ÁÐµÄ 1¡£12 Ð´×ö XII £¬¼´Îª X + II¡£ 27 Ð´×ö XXVII, ¼´Îª XX+V+II¡£
- * Í¨³£Çé¿öÏÂ£¬ÂÞÂíÊý×ÖÖÐÐ¡µÄÊý×ÖÔÚ´óµÄÊý×ÖµÄÓÒ±ß¡£µ«Ò²´æÔÚÌØÀý£¬ÀýÈç 4 ²»Ð´×öIIII£¬¶øÊÇIV¡£
- * Êý×Ö 1 ÔÚÊý×Ö 5 µÄ×ó±ß£¬Ëù±íÊ¾µÄÊýµÈÓÚ´óÊý 5 ¼õÐ¡Êý 1 µÃµ½µÄÊýÖµ 4 ¡£Í¬ÑùµØ£¬Êý×Ö 9 ±íÊ¾ÎªIX¡£
- * Õâ¸öÌØÊâµÄ¹æÔòÖ»ÊÊÓÃÓÚÒÔÏÂÁùÖÖÇé¿ö£º
- * I¿ÉÒÔ·ÅÔÚV(5) ºÍX(10) µÄ×ó±ß£¬À´±íÊ¾ 4 ºÍ 9¡£
- * X¿ÉÒÔ·ÅÔÚL(50) ºÍC(100) µÄ×ó±ß£¬À´±íÊ¾ 40 ºÍ 90¡£
- * C¿ÉÒÔ·ÅÔÚD(500) ºÍM(1000) µÄ×ó±ß£¬À´±íÊ¾400 ºÍ 900¡£
- * ¸ø¶¨Ò»¸öÂÞÂíÊý×Ö£¬½«Æä×ª»»³ÉÕûÊý¡£ÊäÈëÈ·±£ÔÚ 1 µ½ 3999 µÄ·¶Î§ÄÚ¡£
+ * ä¾‹å¦‚ï¼Œ ç½—é©¬æ•°å­— 2 å†™åš II ï¼Œå³ä¸ºä¸¤ä¸ªå¹¶åˆ—çš„ 1ã€‚12 å†™åš XII ï¼Œå³ä¸º X + IIã€‚ 27 å†™åš XXVII, å³ä¸º XX+V+IIã€‚
+ * é€šå¸¸æƒ…å†µä¸‹ï¼Œç½—é©¬æ•°å­—ä¸­å°çš„æ•°å­—åœ¨å¤§çš„æ•°å­—çš„å³è¾¹ã€‚ä½†ä¹Ÿå­˜åœ¨ç‰¹ä¾‹ï¼Œä¾‹å¦‚ 4 ä¸å†™åšIIIIï¼Œè€Œæ˜¯IVã€‚
+ * æ•°å­— 1 åœ¨æ•°å­— 5 çš„å·¦è¾¹ï¼Œæ‰€è¡¨ç¤ºçš„æ•°ç­‰äºŽå¤§æ•° 5 å‡å°æ•° 1 å¾—åˆ°çš„æ•°å€¼ 4 ã€‚åŒæ ·åœ°ï¼Œæ•°å­— 9 è¡¨ç¤ºä¸ºIXã€‚
+ * è¿™ä¸ªç‰¹æ®Šçš„è§„åˆ™åªé€‚ç”¨äºŽä»¥ä¸‹å…­ç§æƒ…å†µï¼š
+ * Iå¯ä»¥æ”¾åœ¨V(5) å’ŒX(10) çš„å·¦è¾¹ï¼Œæ¥è¡¨ç¤º 4 å’Œ 9ã€‚
+ * Xå¯ä»¥æ”¾åœ¨L(50) å’ŒC(100) çš„å·¦è¾¹ï¼Œæ¥è¡¨ç¤º 40 å’Œ 90ã€‚
+ * Cå¯ä»¥æ”¾åœ¨D(500) å’ŒM(1000) çš„å·¦è¾¹ï¼Œæ¥è¡¨ç¤º400 å’Œ 900ã€‚
+ * ç»™å®šä¸€ä¸ªç½—é©¬æ•°å­—ï¼Œå°†å…¶è½¬æ¢æˆæ•´æ•°ã€‚è¾“å…¥ç¡®ä¿åœ¨ 1 åˆ° 3999 çš„èŒƒå›´å†…ã€‚
  */
 public class RomanToIntDemo {
 
@@ -31,7 +31,7 @@ public class RomanToIntDemo {
     }
 
     public static int romanToInt(String s) {
-        // ½«ÂÞÂíÊý×Ö¿ÉÄÜµÄÇé¿ö´æÈëµ½hashMapÖÐ
+        // å°†ç½—é©¬æ•°å­—å¯èƒ½çš„æƒ…å†µå­˜å…¥åˆ°hashMapä¸­
         Map<String, Integer> map = new HashMap<>();
         map.put("I", 1);
         map.put("IV", 4);
@@ -47,7 +47,7 @@ public class RomanToIntDemo {
         map.put("CM", 900);
         map.put("M", 1000);
         int ans = 0;
-        for (int i = 0; i < s.length(); ) {    // iÔö¼ÓÓÐÁ½ÖÖÇé¿ö£¬Ò»ÖÖÊÇÁ½Î»ÌØÊâ¹æÔò£¬i+=2£¬Ò»ÖÖÊÇ·ÇÌØÊâ¹æÔò£¬i++;
+        for (int i = 0; i < s.length(); ) {    // iå¢žåŠ æœ‰ä¸¤ç§æƒ…å†µï¼Œä¸€ç§æ˜¯ä¸¤ä½ç‰¹æ®Šè§„åˆ™ï¼Œi+=2ï¼Œä¸€ç§æ˜¯éžç‰¹æ®Šè§„åˆ™ï¼Œi++;
             if (i + 1 < s.length() && map.containsKey(s.substring(i, i + 2))) {
                 ans += map.get(s.substring(i, i + 2));
                 i += 2;

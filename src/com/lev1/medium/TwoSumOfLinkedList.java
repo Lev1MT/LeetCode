@@ -1,4 +1,4 @@
-package com.lev1.normal;
+package com.lev1.medium;
 
 import java.math.BigDecimal;
 import java.util.Stack;
@@ -118,12 +118,12 @@ public class TwoSumOfLinkedList {
 }
 
 class ListNode {
+    int val;
+    ListNode next;
+
     ListNode(int x) {
         val = x;
     }
-
-    int val;
-    ListNode next;
 
     @Override
     public String toString() {
