@@ -28,7 +28,7 @@ public class IsMatchDemo {
                     dp[i][j] = dp[i][j - 2] || (text.charAt(i - 1) == pattern.charAt(j - 2) || pattern.charAt(j - 2) == '.') && dp[i - 1][j];
                 } else {
                     // 只有当前字符完全匹配，才能传递dp[i-1][j-1]的值
-                    dp[i][j] = text.charAt(i - 1) == pattern.charAt(j - 1) || pattern.charAt(j - 1) == '.' && dp[i - 1][j - 1];
+                    dp[i][j] = (text.charAt(i - 1) == pattern.charAt(j - 1) || pattern.charAt(j - 1) == '.') && dp[i - 1][j - 1];
                 }
             }
         }
